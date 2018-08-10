@@ -1,4 +1,6 @@
-<!--Psuedo code-->
+<!--I have psuedocode, one complete multiple choice question, no css and need JavaScript functionality
+time was very limited due to unavoidable familty circumstances this week, just submitting what I have before the deadline
+I hope to complete this over the weekend.-->
 
 
 <!DOCTYPE html>
@@ -9,7 +11,7 @@
     <title>ELENA'S TIMED QUIZ</title>
 
      <!-- <link rel="stylesheet" type="text/css" href="reset.css"> 
-        DO I NEED A RESET STYLESHEET FOR THIS?-->
+        DO I NEED A RESET STYLESHEET FOR THIS? DO I NEED BOOTSTRAP WITH A FORM? ask before class tomorrow!!-->
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" src="script.js"></script>
       <script src="jquery-3.3.1.min.js"></script>
@@ -23,15 +25,27 @@
     <h2>Fill out the multiple choice questions below to see how you score!</h2>
     
     <button id="start">Start Quiz</button>
-        <!--need to link this to timer-->
+        <!--need to link this to timer, do I use buttons inside the form?-->
     <div id="quiz">
-        <!--Do I need a div here with a form?-->
+        <!--Do I need a div here with a form??-->
     <form id = "quiz" name = "romanquiz">
         <!--need questions in text element, use p tags
             need radio button element to limit choices to one per question-->
 
-        <p>Who was the first Roman Emperor?</p>
-        Augustus Ceasar
+        <p>Who was the first Roman Emperor?<br>
+            <input type="radio" name="question 1" 
+            value="Augustus Ceasar">Augustus Ceasar<BR>
+            <input type="radio" name="question 1" 
+            value="Sulla">Sulla<BR>
+            <input type="radio" name="question 1" 
+            value="Julius Ceasar">Julius Ceasar<BR>
+            <input type="radio" name="question 1" 
+            value="Mark Antony">Mark Antony<BR>
+            <input type="radio" name="question 1" 
+            value="Caligula">Caligula<BR>
+        </p>
+        <!--1st question working in HTML, think of 4 fake answers ea for the rest and make sure
+        to mix up the location of the correct answers (and check them since you did it from memory!-->
         <p>From what country did the bulk of the Roman public grain supply originate?</p>
         Egypt
         <p>What was the main sea port of the Ancient Roman Empire?</p>
@@ -40,14 +54,17 @@
         80
         <p>At what age did the Roman man first don his Toga Virilis (the garment signifying adulthood)?</p>
         15
-        
 
-    </form>
-
+    <br>
+    
+    <!--<input type="submit" value="Finish Quiz">
+    <input type="reset" value="Clear Quiz">
+    not sure if I should use these buttons in the form or one outside it-->
+</form>
     </div>
 
     <div id="results"></div>
-    <button id="submit">Submit Quiz</button>
+    <button id="submit">Finish Quiz</button>
     <div id="empty-div"></div>    
 
     </body>
