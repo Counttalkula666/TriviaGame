@@ -1,24 +1,53 @@
 <!--Psuedo code-->
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 
-    <title></title>
+    <title>ELENA'S TIMED QUIZ</title>
 
-      <link rel="stylesheet" type="text/css" href="reset.css">
+     <!-- <link rel="stylesheet" type="text/css" href="reset.css"> 
+        DO I NEED A RESET STYLESHEET FOR THIS?-->
       <link rel="stylesheet" type="text/css" href="style.css">
       <script type="text/javascript" src="script.js"></script>
+      <script src="jquery-3.3.1.min.js"></script>
 
   </head>
 
   <body>
 
-    <h1>My First Heading</h1>
+    <h1>Ancient Roman History Quiz</h1>
     
-    <p>My first paragraph.</p>
+    <h2>Fill out the multiple choice questions below to see how you score!</h2>
+    
+    <button id="start">Start Quiz</button>
+        <!--need to link this to timer-->
+    <div id="quiz">
+        <!--Do I need a div here with a form?-->
+    <form id = "quiz" name = "romanquiz">
+        <!--need questions in text element, use p tags
+            need radio button element to limit choices to one per question-->
 
+        <p>Who was the first Roman Emperor?</p>
+        Augustus Ceasar
+        <p>From what country did the bulk of the Roman public grain supply originate?</p>
+        Egypt
+        <p>What was the main sea port of the Ancient Roman Empire?</p>
+        Ostia
+        <p>How many men were in a standard Roman century?</p>
+        80
+        <p>At what age did the Roman man first don his Toga Virilis (the garment signifying adulthood)?</p>
+        15
+        
+
+    </form>
+
+    </div>
+
+    <div id="results"></div>
+    <button id="submit">Submit Quiz</button>
     <div id="empty-div"></div>    
 
     </body>
